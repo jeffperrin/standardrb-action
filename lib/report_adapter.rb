@@ -4,8 +4,8 @@ class ReportAdapter
   class << self
     CONCLUSION_TYPES = {failure: "failure", success: "success"}.freeze
     ANNOTATION_LEVELS = {
-      "refactor" => "failure",
-      "convention" => "failure",
+      "refactor" => "warning",
+      "convention" => "warning",
       "warning" => "warning",
       "error" => "failure",
       "fatal" => "failure",
