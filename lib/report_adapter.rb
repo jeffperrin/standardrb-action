@@ -12,8 +12,6 @@ class ReportAdapter
     }.freeze
 
     def conclusion(report)
-      return CONCLUSION_TYPES[:failure] if total_offenses(report).positive?
-
       CONCLUSION_TYPES[:success]
     end
 
